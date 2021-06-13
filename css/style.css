@@ -288,6 +288,11 @@ label {
 .hero-text {
 	padding-top: 260px;
 }
+@media(max-width: 767px){
+	.hero-text{
+		padding-top: 60px
+	}
+}
 .box {
 	background: #fff;
 	padding: 20px;
@@ -364,7 +369,7 @@ input {
 	margin: 160px auto;
 }
 .marketing-text {
-	margin: 81px 0;
+	margin: 81px 15px;
 }
 .marketing-background{
 	background-image:url(../img/banner/backgroun.png);
@@ -388,6 +393,7 @@ input {
 }
 .box2 {
 	text-align: center;
+	width: 100%;
 }
 .box2 img {
 	padding: 20px;
@@ -471,35 +477,29 @@ input {
 }
 
 
-.social-icon1 a{
-	  position: fixed;
-	  width: 100px;
-	  height: 100px;
-	 	z-index: 999;
-	  top:100px;
-	  right: 0;
+.social-area {
+	position: fixed;
+	top: 100px;
+	right: 0;
+	z-index: 999;
 }
-.social-icon2 a{
-	  position: fixed;
-	  width: 100px;
-	  height: 100px;
-	 	z-index: 999;
-	  top:200px;
-	  right: 0;
+
+.social-icon-box a{
+	display: block;
+	width: 100px;
+	height: 100px;
 }
-.social-icon3 a{
-	  position: fixed;
-	  width: 100px;
-	  height: 100px;
-	 	z-index: 999;
-	  top:300px;
-	  right: 0;
-}
-.social-icon4 a{
-	  position: fixed;
-	  width: 100px;
-	  height: 100px;
-	 	z-index: 999;
-	  top:400px;
-	  right: 0;
+@media(max-width: 767px){
+		
+	.social-area {
+		bottom: 0 !important;
+		top: unset;
+	}
+	
+	.social-icon-box a{
+		width: 50px;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+
 }
